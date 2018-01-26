@@ -4,13 +4,14 @@ function maxOfTwoNumbers(first, second) {
     console.log("The first number is greater and that number is ", first);
   } else {
       console.log("The second number is greater and that number is ", second);
-
   }
 }
-
 var largest = maxOfTwoNumbers(2, 6);
 console.log(largest);
 
+
+
+// ======================================================
 // Finding Longest Word
 var words = [
   "mystery",
@@ -39,6 +40,8 @@ function findLongestWord(wordsArr) {
 var longest = findLongestWord(words);
 console.log(longest);
 
+// ======================================================
+
 // Calculating a Sum
 function sumArray(array) {
   var sum = 0;
@@ -51,6 +54,8 @@ function sumArray(array) {
 var numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 var total = sumArray(numbers);
 console.log(total);
+
+// ====================================================
 
 // Calculate the Average
 function averageNumbers(array) {
@@ -106,6 +111,17 @@ function uniquifyArray(array) {
   return newArray;
 }
 
+// Rakeem's solution:
+// function uniquifyArray(arrayOfWords) {
+//   const result = [];
+//   arrayOfWords.map(element => {
+//     if (result.indexOf(element) === -1) {
+//       result.push(element);
+//     }
+//   });
+//   return result;
+// }
+
 var wordsUnique = [
   "crab",
   "poison",
@@ -132,6 +148,17 @@ function doesWordExist(wordsArray, word) {
   }
   return exist;
 }
+
+//Mosi's solution:
+// function doesWordExist(array, thingy) {
+//   if (array.length === 0) {
+//     return false;
+//   }
+//   if (array.includes(thingy)) {
+//     return true;
+//   }
+//   return false;
+// }
 
 var wordsExist = [
   "machine",
